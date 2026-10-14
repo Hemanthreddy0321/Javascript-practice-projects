@@ -1,0 +1,79 @@
+
+.dots button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    border: none;
+    background-color: lightgray;
+    margin: 4px;
+    cursor: pointer;
+}
+
+
+.dots button.active {
+    background-color: blue;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    text-align: center;
+    margin: 0;
+    padding: 40px 20px;
+}
+
+h1 {
+    color: #1e293b;
+    margin-bottom: 30px;
+}
+
+
+
+.slider {
+    width: 350px;
+    height: 280px;
+    object-fit: contain;
+    background-color: white;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.prebtn,
+.nxtbtn {
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background-color: #2563eb;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.prebtn:hover,
+.nxtbtn:hover {
+    background-color: #1d4ed8;
+    transform: scale(1.1);
+}
+
+
+.imagecount {
+    font-size: 16px;
+    font-weight: bold;
+    color: #334155;
+    margin: 20px 0 12px;
+}
+
+.dots {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
+}
+

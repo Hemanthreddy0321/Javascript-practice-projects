@@ -1,0 +1,156 @@
+.mynote{
+  background: linear-gradient(135deg, #5146c8, #7967ed);
+    color: white;
+    padding: 30px;
+    border-radius: 14px;
+    margin-bottom: 25px;
+}
+
+.mynote h1 {
+    margin-top: 0;
+    margin-bottom: 8px;
+}
+
+.mynote p {
+    margin-bottom: 0;
+    color: #e9e7ff;
+}
+
+.note{
+    display: block;
+    width: 80%;
+    height: 100px;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: vertical;
+
+}
+
+.btn{
+    padding: 12px 24px;
+    width: auto;
+    height: auto;
+    background-color: #5146c8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+
+}
+
+.noteCard{
+   background-color: #fffbdc;
+    color: #252525;
+    padding: 22px;
+    border-radius: 12px;
+    border: 1px solid #f0e8b7;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    font-size: 16px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+
+.notecard:hover {
+    transform: translateY(-3px);
+    box-shadow:0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.sbtn{
+    display: block;
+    margin-left: auto;
+    background-color: #fee2e2;
+    color: #b91c1c;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+
+
+
+.notesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.listHeading{
+     font-size: 26px;
+    color: #252545;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+.noteTitle {
+    display: block;
+    width: 80%;
+    padding: 12px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.noteCard h3 {
+     margin: 0 0 10px;
+    font-size: 20px;
+    color: #252545;
+}
+
+.noteCard p {
+   margin: 0 0 15px;
+    line-height: 1.6;
+    white-space: pre-wrap;
+}
+
+.sbtn:hover {
+    background-color: #fecaca;
+}
+
+
+
+@media (max-width: 600px) {
+    body {
+        padding: 16px;
+    }
+
+    .notesList {
+        grid-template-columns: 1fr;
+    }
+
+    .mynote {
+        padding: 22px;
+    }
+}
+
+
+.btn:hover {
+    background-color: #3f35a5;
+}
+
+.noteTitle,
+.note {
+    width: 100%;
+    max-width: 750px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.noteTitle:focus,
+.note:focus {
+    outline: 2px solid #7967ed;
+    border-color: transparent;
+}
